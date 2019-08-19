@@ -34,32 +34,7 @@
             文章目录
           </p>
           <div class="toc-container hidden lg:block">
-            <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#git">Git</a></li>
-<li><a href="#github">Github</a>
-<ul>
-<li><a href="#%E4%BB%93%E5%BA%93">仓库</a></li>
-<li><a href="#token">Token</a></li>
-</ul>
-</li>
-<li><a href="#gridea%E9%85%8D%E7%BD%AE">Gridea配置</a>
-<ul>
-<li><a href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85">下载安装</a></li>
-<li><a href="#%E5%A1%AB%E9%85%8D%E7%BD%AE">填配置</a></li>
-</ul>
-</li>
-<li><a href="#defender">Defender</a></li>
-<li><a href="#%E6%9B%B4%E6%8D%A2walker%E4%B8%BB%E9%A2%98">更换Walker主题</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
+            
           </div>
         </div>
       
@@ -104,126 +79,16 @@
 <div class="mask" onclick="closeMenu()">
 </div>
       <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
-        <h1 class="text-3xl font-bold lg:mt-16">Gridea+Github快速教程</h1>
+        <h1 class="text-3xl font-bold lg:mt-16">关于我</h1>
         <div class="text-sm text-gray-700 lg:my-8">
           2019-08-19 / 1 min read
         </div>
         
-          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://cyberlisa.github.io//post-images/hello-gridea.png" alt="">
-        
         <div class="post-content yue">
-          <p>想知道如何使用Gridea吗？</p>
-<!-- more -->
-<h3 id="git">Git</h3>
-<p>Git https://git-scm.com</p>
-<ul>
-<li>下载后安装</li>
-<li>安装完之后在桌面右键Git Bash Here，输入以下内容进行配置</li>
-</ul>
-<pre><code class="language-git">$ git config --global user.name &quot;sailorlisa&quot;
-$ git config --global user.email &quot;sailorlisa@outlook.com&quot;
-</code></pre>
-<h3 id="github">Github</h3>
-<p>Github账号 https://github.com</p>
-<ul>
-<li>每个github账号有1个免费的github pages</li>
-<li>如果免费的已被占用（例如hexo），得自行注册新的github账号或者自行买域名，在仓库里的github pages里设置好</li>
-</ul>
-<h4 id="仓库">仓库</h4>
-<ol>
-<li>点击create a new repositories</li>
-<li>输入Repository name：Cyberlisa.github.io。固定格式：<username>.github.io</li>
-<li>Description可填可不填。</li>
-<li>勾选Public</li>
-<li>勾选Intialize this repository with a README(可不勾选)</li>
-<li>点击Create repository</li>
-<li>自动跳转到仓库页面，点击Insights后面的Settings</li>
-<li>拉到下面GitHub Pages，看看有没有显示：Your site is published at https://cyberlisa.github.io/</li>
-<li>没有的话稍微等一下再试</li>
-<li>有的话点击链接跳转，看看能否打开</li>
-</ol>
-<h4 id="token">Token</h4>
-<ol>
-<li>在github界面点击头像，点击Settings——&gt;Personal settings——&gt;Developer settings</li>
-<li>找到最后的Personal access tokens——&gt;Generate new token——&gt;填写Note——&gt;勾选repo——&gt;Generate token</li>
-<li>创建个txt文档，把token保存起来。如果不保存，那先不要关闭这个页面，待会儿需要用到token。</li>
-</ol>
-<h3 id="gridea配置">Gridea配置</h3>
-<h4 id="下载安装">下载安装</h4>
-<p>在https://gridea.dev下载符合自己系统的客户端，安装。</p>
-<p>安装完之后打开，如果在【文章】里看到一片空白，卸载整个客户端，重新安装。</p>
-<h4 id="填配置">填配置</h4>
-<p>如果打开后能看到默认的2篇文章，点击【配置】：</p>
-<table>
-<thead>
-<tr>
-<th>Platform</th>
-<th>Github Pages</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>域名</td>
-<td>Github Pages 对应的域名</td>
-<td>https://cyberlisa.github.io/</td>
-</tr>
-<tr>
-<td>仓库</td>
-<td>github上仓库名</td>
-<td>Cyberlisa.github.io</td>
-</tr>
-<tr>
-<td>分支</td>
-<td>Github Pages 对应的分支</td>
-<td>master</td>
-</tr>
-<tr>
-<td>仓库用户名</td>
-<td>仓库所属用户的用户名</td>
-<td>Cyberlisa</td>
-</tr>
-<tr>
-<td>邮箱</td>
-<td>Git 推送时的邮箱</td>
-<td>sailorlisa@163.com</td>
-</tr>
-<tr>
-<td>Token</td>
-<td></td>
-<td>上面步骤里的token</td>
-</tr>
-<tr>
-<td>CNAME</td>
-<td></td>
-<td>可不填</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>填完配置后，点击【保存】</li>
-<li>无误后，点击【检测远程连接】</li>
-<li>点击【预览】，会弹出浏览器，本地预览效果。</li>
-<li>可在【主题】里选择其他内置主题，不要忘记拉到下面选择【保存】</li>
-<li>选择了其他主题后，点击【预览】</li>
-<li>如果没问题，点击【同步】</li>
-<li>稍等3分钟左右，点击同步按钮下面那个像地球的网格图标，会在浏览器自动弹出博客网页。看看有没有什么问题。</li>
-<li>在客户端里进行任何操作，不要忘记点击【保存】。保存了之后先预览，没问题再同步。</li>
-<li>有问题点击https://github.com/getgridea/gridea里的【Issues】，在【Open】和【Closed】里看看有没有和你问题相似的issue。</li>
-</ol>
-<h3 id="defender">Defender</h3>
-<p>如果你是win10用户，在操作时出现异常，看看通知里有没有defender的警告。我一开始根本操作不了客户端，因为defender限制权限。把defender关了之后才能正常使用。</p>
-<h3 id="更换walker主题">更换Walker主题</h3>
-<p>在https://gridea.dev/themes/购买Walker主题，购买完后点击【下载文件】，下载后解压。</p>
-<p>点击客户端里的【系统】，找到【源文件夹】，自己打开路径。退出Gridea客户端。</p>
-<p>点击【themes】，把walker文件夹复制过来，打开Gridea客户端，打开【主题】，选择主题，滚动下鼠标，选中最后的Walker，保存。</p>
+          <p>喜欢思考！乐于挖掘有趣的东西！</p>
 
         </div>
 
-        
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://cyberlisa.github.io//tag/jO2XkOZnC">
-            <span class="flex-auto">Gridea</span>
-          </a>
         
 
 
