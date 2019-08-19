@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyberlisa.github.io/</id>
     <title>lisa&apos;s blog</title>
-    <updated>2019-08-19T05:27:29.342Z</updated>
+    <updated>2019-08-19T05:31:29.623Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyberlisa.github.io/"/>
     <link rel="self" href="https://cyberlisa.github.io//atom.xml"/>
@@ -123,6 +123,58 @@ $ git config --global user.email &quot;sailorlisa@outlook.com&quot;
 <p>在https://gridea.dev/themes/购买Walker主题，购买完后点击【下载文件】，下载后解压。</p>
 <p>点击客户端里的【系统】，找到【源文件夹】，自己打开路径。退出Gridea客户端。</p>
 <p>点击【themes】，把walker文件夹复制过来，打开Gridea客户端，打开【主题】，选择主题，滚动下鼠标，选中最后的Walker，保存。</p>
+<h3 id="开启gitalk评论系统">开启Gitalk评论系统</h3>
+<p>在https://github.com/settings/applications/new注册应用。</p>
+<table>
+<thead>
+<tr>
+<th>Application name</th>
+<th>Gridea_gitalk（自定义）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homepage URL</td>
+<td>https://cyberlisa.github.io/</td>
+</tr>
+<tr>
+<td>Application description</td>
+<td>可不填</td>
+</tr>
+<tr>
+<td>Authorization callback URL</td>
+<td>https://cyberlisa.github.io/</td>
+</tr>
+</tbody>
+</table>
+<p>填写后点击【Register application】，会得到【Client ID】和【Client Secret】。</p>
+<p>打开Gridea客户端——&gt;配置——&gt;评论配置——&gt;Platform（选中Gitalk）——&gt;开启按钮——&gt;</p>
+<table>
+<thead>
+<tr>
+<th>Client ID</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client Secret</td>
+<td></td>
+</tr>
+<tr>
+<td>仓库</td>
+<td>Cyberlisa.github.io</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Cyberlisa</td>
+</tr>
+</tbody>
+</table>
+<p>填完后点击【保存】——&gt;【同步】。</p>
+<p>稍等一会儿后，在浏览器打开域名，会看到文章底下显示“未找到相关的issues进行评论xxx”，点击【使用GitHub登陆】，进行授权。</p>
+<p><img src="https://cyberlisa.github.io//post-images/1566192595724.png" alt=""></p>
+<p><img src="https://cyberlisa.github.io//post-images/1566192602891.png" alt=""></p>
 ]]></content>
     </entry>
 </feed>
